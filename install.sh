@@ -129,7 +129,7 @@ arch_packages=(
 )
 
 gpt1_size_MiB=8
-doroot_size_MiB=16
+doroot_size_MiB=8
 biosboot_size_MiB=8
 archroot_size_MiB=
 gpt2_size_MiB=8
