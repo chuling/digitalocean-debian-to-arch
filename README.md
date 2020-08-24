@@ -1,4 +1,10 @@
-DigitalOcean Debian to Arch
+```
+apt-get install xfsprogs
+wget https://raw.githubusercontent.com/chuling/digitalocean-debian-to-arch/debian9/install.sh
+bash install.sh
+```
+
+<!-- DigitalOcean Debian to Arch
 ===========================
 DigitalOcean deprecated Arch Linux a while back because it was relatively
 difficult to support due to the rolling updates. I wrote this script to
@@ -85,4 +91,4 @@ How it Works
 11. The blockplan is executed.
 12. The bootloader (Grub) is installed.
 13. Reboot!
-14. Done!
+14. Done! -->
