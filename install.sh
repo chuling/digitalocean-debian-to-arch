@@ -128,11 +128,11 @@ arch_packages=(
 	wget     # for digitalocean-synchronize
 )
 
-gpt1_size_MiB=1
-doroot_size_MiB=6
-biosboot_size_MiB=1
+gpt1_size_MiB=8
+doroot_size_MiB=16
+biosboot_size_MiB=8
 archroot_size_MiB=
-gpt2_size_MiB=1
+gpt2_size_MiB=8
 
 doroot_offset_MiB=$((gpt1_size_MiB))
 biosboot_offset_MiB=$((doroot_offset_MiB + doroot_size_MiB))
