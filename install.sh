@@ -72,8 +72,8 @@ target_architecture="$(uname -m)"
 # new disklabel type (gpt/dos)
 target_disklabel="gpt"
 
-# new filesystem type (ext4/btrfs)
-target_filesystem="ext4"
+# new filesystem type (xfs/btrfs)
+target_filesystem="xfs"
 
 # NOT EXPOSED NORMALLY: don't prompt
 continue_without_prompting=0
@@ -224,7 +224,7 @@ validate_flags_and_augment_globals() {
 			;;
 	esac
 	case "${target_filesystem}" in
-		ext4)
+		xfs)
 			;;
 		btrfs)
 			host_packages+=(btrfs-tools)
@@ -376,7 +376,7 @@ stage1_install() {
 	log "Formatting image ..."
 	local doroot_loop=$(setup_loop_device ${doroot_offset_MiB} ${doroot_size_MiB})
 	local archroot_loop=$(setup_loop_device ${archroot_offset_MiB} ${archroot_size_MiB})
-	mkfs.ext4 -L DOROOT ${doroot_loop}
+	mkfs.xfs -L DOROOT ${doroot_loop}
 	mkfs.${target_filesystem} -L ArchRoot ${mkfs_options} ${archroot_loop}
 
 	log "Mounting image ..."
