@@ -52,7 +52,7 @@ run_from_file() {
 ########################################
 
 # mirror from which to download archlinux packages
-archlinux_mirror="http://mirrors.kernel.org/archlinux"
+archlinux_mirror="https://mirrors.kernel.org/archlinux"
 
 # extra packages
 extra_packages=""
