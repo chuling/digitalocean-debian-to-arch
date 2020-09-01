@@ -1,7 +1,11 @@
 ```
+apt update
 apt-get install xfsprogs
 wget https://raw.githubusercontent.com/chuling/digitalocean-debian-to-arch/debian9/install.sh
 bash install.sh
+
+# arch
+sudo pacman -S xfsprogs
 ```
 
 <!-- DigitalOcean Debian to Arch
