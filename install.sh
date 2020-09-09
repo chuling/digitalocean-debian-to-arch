@@ -55,7 +55,7 @@ run_from_file() {
 archlinux_mirror="https://mirrors.kernel.org/archlinux"
 
 # extra packages
-extra_packages=""
+extra_packages="xfsprogs base base-devel linux-lts linux-firmware vim neovim networkmanager dhclient sudo zsh git htop shadowsocks-libev kcptun v2ray supervisor dnsmasq"
 
 # grub timeout
 grub_timeout=3
