@@ -1,11 +1,14 @@
 ```
 apt update
-apt-get install xfsprogs
+apt install xfsprogs -y
 wget https://raw.githubusercontent.com/chuling/digitalocean-debian-to-arch/debian9/install.sh
 bash install.sh
 
-# arch
-sudo pacman -S xfsprogs
+# microcode
+sudo cp /boot/grub/grub.cfg ~/
+sudo pacman -S intel-ucode
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo diff /boot/grub/grub.cfg ~/grub.cfg
 ```
 
 <!-- DigitalOcean Debian to Arch
