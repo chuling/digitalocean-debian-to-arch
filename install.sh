@@ -58,10 +58,10 @@ archlinux_mirror="https://mirrors.kernel.org/archlinux"
 extra_packages=""
 
 # grub timeout
-grub_timeout=5
+grub_timeout=3
 
 # package to use as kernel (linux or linux-lts)
-kernel_package=linux
+kernel_package=linux-lts
 
 # extra mkfs options
 mkfs_options=""
